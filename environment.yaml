@@ -1,0 +1,14 @@
+channels:
+  - bioconda
+  - defaults
+  - conda-forge
+dependencies:
+  - pear=0.9.6
+  - vsearch=2.4.0
+  - mothur=1.39.5
+  - snakemake=3.13.3
+  - pyyaml=3.11
+  - swarm=2.1.13
+  - biom-format=2.1.5
+  - numpy=1.13.3
+  - scipy=0.19.1

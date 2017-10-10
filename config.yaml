@@ -1,0 +1,23 @@
+---
+#Project Specific references
+#directory containing the raw, inflated fastq files
+read_directory: "raw_seqs_test2"
+
+#Portion of file name after your identifying sample name
+raw_file_forward_extension: "_R1_001.fastq.gz"
+raw_file_reverse_extension: "_R2_001.fastq.gz"
+
+#Typically static references
+#OTU label name for vsearch dereplicate_vsearch
+derep_otu_name: "Derep_OTU"
+
+#Chimera database for vsearch
+chimera_db: "additional_files/silva128_97_otus_16S.fasta"
+
+#Oligos file for MOTHUR trimming
+oligos_file: "additional_files/515F_806R_oligos_for_mothur.txt"
+
+#Specify threads for vsearch reference based chimera detection
+uchime_ref_threads: 6
+mothur_threads: 6 #if this is too low, it might run them in parallel and mess up the logging. The script will run fine and the data will be correct.
+swarm_threads: 6
