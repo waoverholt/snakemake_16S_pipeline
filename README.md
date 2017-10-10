@@ -34,4 +34,7 @@ The pipeline requires a config.yaml file to run. Please modify the existing conf
 5. Denovo and reference chimera detection with vsearch.
 6. OTU picking with swarm.
 
+#Chimera reference database
+The chimera reference database I use it too large to be hosted on github. I am currently using the 97 rep_set from [SILVA128 database](https://www.arb-silva.de/download/archive/qiime/).
+
 The resulting OTU table is not abundance filtered. The tab delimited and the biom format tables produced are identical. Further analyzes can proceed using QIIME or R. To work with QIIME, you will need to deactivate the conda environment.
